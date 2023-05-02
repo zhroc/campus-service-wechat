@@ -1,0 +1,16 @@
+<!--pages/myFavorites/index.wxml-->
+<!-- <text>pages/myFavorites/index.wxml</text> -->
+<view class="box">
+    <view class="items" wx:for="{{favoritesArticleList}}" wx:key="item" bindtap="gotodetail" data-info="{{item}}">
+          <view class="father">
+            <view class="son1">
+              <text class="title">{{item.title}}</text>
+              <!-- <text class="digest">{{item.digest}}</text> -->
+            </view>
+            <view class="son2">
+              <image src="{{item.newsheader}}" mode="aspectFill"></image>
+            </view>
+          </view>
+    </view>
+    <view wx:if="{{favoritesArticleList.length == 0}}" class="foot">暂无更多数据</view>
+</view>

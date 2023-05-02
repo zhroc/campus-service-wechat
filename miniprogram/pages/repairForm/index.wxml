@@ -1,0 +1,39 @@
+<!--pages/repairForm/index.wxml-->
+<view>
+  <mp-toptips msg="{{error}}" type="error" show="{{error}}"></mp-toptips>
+  <mp-form-page title="申请报修" subtitle="">
+    <mp-form id="form" rules="{{rules}}" models="{{formData}}">
+      <mp-cells> 
+        <picker 
+          bindchange="buildingChange"
+          value="{{buildingIndex}}" 
+          range="{{buildingArray}}">
+          <mp-cell title="报修区域" link="true" hover="true" value="">
+            <text class="mptext">{{buildingArray[buildingIndex]}}</text>
+          </mp-cell>
+        </picker>
+        <mp-cell title="详细地址" prop="address">
+          <input type="text" data-field="address" bindinput="formInputChange" placeholder="请填写详细地址" value=""/>
+        </mp-cell>
+        <mp-cell title="联系电话" prop="mobile">
+          <input type="number" data-field="mobile" bindinput="formInputChange" placeholder="请填写手机号" value="{{}}"/>
+        </mp-cell>
+        <mp-cell title="故障描述" prop="faultinfo">
+          <textarea rows="1" cols="1" maxlength="100" style="width: 50vw; height: 20vw;" bindinput="formInputChange" data-field="faultinfo"></textarea>
+        </mp-cell>
+        <mp-cell title="故障图片" >
+          <view class="tips">请依次上传2张图片与1个视频</view>
+          <view >
+            <image class="faultmedia" wx:key="item" wx:for="{{imageUrlArray}}" src="{{item}}" bindtap="previewImg" data-index= "{{index}}"></image>
+            <video class="faultmedia" wx:key="item" wx:for="{{videoUrlArray}}" src="{{item}}" data-index= "{{index}}"></video>
+            <image class="faultmedia" wx:key="item" wx:if="{{imageUrlArray.length < 2}}" bindtap="getImage" src="/images/svg/uploadAdd.svg"></image>
+            <image class="faultmedia" wx:key="item" wx:if="{{imageUrlArray.length == 2 && videoUrlArray.length < 1}}" bindtap="getVideo" src="/images/svg/uploadAdd.svg"></image>
+          </view>
+        </mp-cell>
+      </mp-cells>
+    </mp-form>
+    <view slot="button">
+        <button class="weui-btn" type="primary" bindtap="submitForm">提交</button>
+    </view>
+  </mp-form-page>
+</view>

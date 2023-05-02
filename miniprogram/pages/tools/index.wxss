@@ -1,0 +1,148 @@
+/* pages/student_repairEnt/index.wxss */
+/* #15bc84 */
+/* 轮播图 */
+
+.lunbo1 {
+  width: 100%;
+  margin-bottom: 4vh;
+  box-sizing: border-box;
+  padding: 10rpx 10rpx 5rpx 10rpx;
+  background-color: #F6F6F6;
+}
+
+.lubo {
+  width: 100%;
+  height: 350rpx;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.u-wrp-bnr {
+  width: 100%;
+  height: 400rpx;
+  display: block;
+  position: relative;
+  /* top: 100rpx; */
+  background: #f0f0f0;
+  border-radius: 15rpx;
+}
+
+.u-img-slide {
+  width: 100%;
+  height: inherit;
+  border-radius: 15rpx;
+}
+
+/* 列表 */
+
+.body3 {
+  margin-top: 20rpx;
+  width: 100%;
+  /* background-color: white; */
+  box-sizing: border-box;
+  padding: 30rpx 50rpx 50rpx 50rpx;
+}
+
+.body3_1 {
+  /* background-color: rebeccapurple; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.body3_1_1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.body3_1_1_1 {
+  color: #1a1a1a;
+  font-size: 26rpx;
+  margin-top: 20rpx;
+}
+
+/* 热门标识 */
+
+.hotflag {
+  display: flex;
+  padding: 2vw 3vw 1vw 3vw;
+  /* margin-left: 3vw; */
+  background-color: #FFFFFF;
+  border-bottom-style: solid;
+  border-bottom-width: 0.7vw;
+  border-color: #15bc84;
+  font-size: 40rpx;
+  letter-spacing: 0.8vw;
+}
+
+#hotimage {
+  padding-top: 2vw;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+/* 文章 */
+.items {
+  /* margin-top: 3vh; */
+  height: 150rpx;
+  border-bottom: 15rpx solid #efefef;
+  /* border-radius: 8rpx; */
+  line-height: 50rpx;
+  /* margin: 10rpx; */
+  position: relative;
+  padding-top: 20rpx;
+  background-color: rgb(255, 255, 255);  /*设置每张小卡片的颜色*/
+}
+
+.father{
+  display: flex;
+}
+.son1{
+  width: 80%;
+  display: flex;
+  flex-direction: column;  /*使元素纵向布局（默认为横向）*/
+}
+.son2{
+  width: 20%;
+  display: flex;
+}
+.box image{
+  height: 120rpx;
+  width: 100%;
+  margin-right: 20rpx;
+  margin-left: 10rpx;
+}
+
+.title{
+  font-size:32rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  display: -webkit-box;  /*设置为弹性盒子*/
+  overflow:hidden; /*超出隐藏*/
+  text-overflow: ellipsis; /*显示省略号*/
+  -webkit-line-clamp: 1; /*多少行后显示省略号，这里设置为第一行超出后显示省略号*/
+  word-break:break-all; /*强制英文单词自动换行,可要可不要*/
+  -webkit-box-orient: vertical; /* 从上到下垂直排列子元素*/
+}
+
+.digest {
+  font-size: 27rpx;
+  color: gray;
+  margin-top: 30rpx;
+  margin-left: 20rpx;
+  display: -webkit-box;  /*设置为弹性盒子*/
+  overflow:hidden; /*超出隐藏*/
+  text-overflow: ellipsis; /*显示省略号*/
+  -webkit-line-clamp: 1; /*多少行后显示省略号，这里设置为第一行超出后显示省略号*/
+  word-break:break-all; /*强制英文单词自动换行,可要可不要*/
+  -webkit-box-orient: vertical; /* 从上到下垂直排列子元素*/
+}
+
+
+

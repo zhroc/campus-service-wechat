@@ -1,0 +1,14 @@
+<!--pages/newsList/index.wxml-->
+<view class="box">
+    <view class="items" wx:for="{{allArticleList}}" wx:key="item" bindtap="gotodetail" data-info="{{item}}">
+          <view class="father">
+            <view class="son1">
+              <text class="title">{{item.title}}</text>
+              <!-- <text class="digest">{{item.digest}}</text> -->
+            </view>
+            <view class="son2">
+              <image src="{{item.newsheader}}" mode="aspectFill"></image>
+            </view>
+          </view>
+    </view>
+</view>

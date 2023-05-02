@@ -1,0 +1,23 @@
+<!--pages/repairOrderInfo/index.wxml-->
+<view class="main">
+  <view class="head">
+  </view>
+  <view class="content">
+    <mp-cells title="">
+      <mp-cell wx:for="{{dataInfo.repairTitle}}" wx:key="item" title="{{item}}"  value="" footer="{{repairData[index]}}">
+      </mp-cell>
+      <mp-cell title="报修图片"  value="">
+        <image class="faultmedia" src="{{mediumData[0][0]}}" data-src="{{mediumData[0][0]}}" bindtap="previewImg" ></image>
+        <image class="faultmedia" src="{{mediumData[0][1]}}" data-src="{{mediumData[0][1]}}" bindtap="previewImg" ></image>
+        <video class="faultmedia" src="{{mediumData[1][0]}}" ></video>
+      </mp-cell>
+    </mp-cells>
+    <mp-cells title="">
+      <mp-cell wx:for="{{dataInfo.orderTitle}}" wx:key="item" title="{{item}}"  value="" footer="{{orderData[index]}}">
+      </mp-cell>
+    </mp-cells>
+  </view>
+  <view class="foot">
+    <button  wx:if="{{orderData[1] === '进行中'}}" class="weui-btn" id="btn" type="primary" bindtap="updateRepairOrder">维修完成</button>
+  </view>
+</view>

@@ -1,0 +1,556 @@
+[
+    {
+        "fields": [
+            {
+                "description": "学号或者工号",
+                "displayName": "uid",
+                "id": "5r8dhpqa4f73goi8x0knr6mq2di5gaoq",
+                "isRequired": true,
+                "max": 16,
+                "name": "uid",
+                "order": 0,
+                "type": "String"
+            },
+            {
+                "description": "用户微信唯一id",
+                "displayName": "openid",
+                "id": "la9h4me8bec06cqqsnusx4v6vni0kvoq",
+                "name": "openid",
+                "order": 1,
+                "type": "String"
+            },
+            {
+                "defaultValue": "0",
+                "description": "用户角色，0为普通用户，1为管理员",
+                "displayName": "role",
+                "enumElementType": "number",
+                "enumElements": [
+                    {
+                        "label": "普通用户",
+                        "value": 0
+                    },
+                    {
+                        "label": "管理员",
+                        "value": 1
+                    }
+                ],
+                "id": "xfinw4cymnpg1hl1v2iq9p8uuz7oot7g",
+                "isRequired": true,
+                "name": "role",
+                "order": 2,
+                "type": "Enum"
+            },
+            {
+                "defaultValue": "1",
+                "description": "账号状态，0为异常，1为正常",
+                "displayName": "status",
+                "enumElementType": "number",
+                "enumElements": [
+                    {
+                        "label": "账号状态异常",
+                        "value": 0
+                    },
+                    {
+                        "label": "账号状态正常",
+                        "value": 1
+                    }
+                ],
+                "id": "itirjclcsldv8gzqrpvtaexyau7efy9t",
+                "isRequired": true,
+                "name": "status",
+                "order": 3,
+                "type": "Enum"
+            },
+            {
+                "description": "用户姓名",
+                "displayName": "name",
+                "id": "bm7amdsbwri7mlrup7ziouqb4eermyey",
+                "isRequired": true,
+                "max": 10,
+                "min": 2,
+                "name": "name",
+                "order": 4,
+                "type": "String"
+            },
+            {
+                "description": "手机号",
+                "displayName": "mob",
+                "id": "ms8dd9ru74s9bps8w25m4gdcdnqea09t",
+                "isRequired": true,
+                "max": 19999999999,
+                "min": 10000000000,
+                "name": "mob",
+                "order": 5,
+                "type": "Number"
+            },
+            {
+                "copyable": true,
+                "description": "CMS 系统字段，请勿随意修改",
+                "displayName": "文档 ID",
+                "id": "_id",
+                "isHidden": true,
+                "isSystem": true,
+                "name": "_id",
+                "type": "String"
+            },
+            {
+                "dateFormatType": "timestamp-ms",
+                "description": "CMS 系统字段，请勿随意修改。通过 CMS 系统录入的数据会默认添加该字段",
+                "displayName": "创建时间",
+                "id": "_createTime",
+                "isSystem": true,
+                "name": "_createTime",
+                "type": "DateTime"
+            },
+            {
+                "dateFormatType": "timestamp-ms",
+                "description": "CMS 系统字段，请勿随意修改。通过 CMS 系统录入的数据会默认添加该字段",
+                "displayName": "修改时间",
+                "id": "_updateTime",
+                "isSystem": true,
+                "name": "_updateTime",
+                "type": "DateTime"
+            },
+            {
+                "description": "文章收藏",
+                "displayName": "collect",
+                "id": "6mmiu8tgkxh6gihgu0wftn6tknlnh2px",
+                "isRequired": false,
+                "name": "collect",
+                "order": 9,
+                "type": "Array"
+            }
+        ],
+        "collectionName": "user",
+        "displayName": "用户表",
+        "_id": "88a501296420fd37000ad273251e6770"
+    },
+    {
+        "fields": [
+            {
+                "description": "标题",
+                "displayName": "title",
+                "id": "15ey6oc89iahyhpcysu25he6h3p21l68",
+                "isRequired": true,
+                "max": 20,
+                "name": "title",
+                "order": 0,
+                "type": "String"
+            },
+            {
+                "description": "文章内容",
+                "displayName": "content",
+                "id": "o24log7rkqp6z5d81q8cb40id8kxqwju",
+                "isRequired": true,
+                "name": "content",
+                "order": 1,
+                "type": "RichText"
+            },
+            {
+                "description": "文章头图",
+                "displayName": "newsheader",
+                "id": "a22lcl6lyz6431ufeamuxt19w6jsj3xj",
+                "isMultiple": false,
+                "isRequired": true,
+                "name": "newsheader",
+                "order": 2,
+                "resourceLinkType": "fileId",
+                "type": "Image"
+            },
+            {
+                "description": "文章点赞",
+                "displayName": "like",
+                "id": "wxuw5nffqk9zn1hhgofmwollrnpg53vl",
+                "name": "like",
+                "order": 3,
+                "type": "Array"
+            },
+            {
+                "description": "文章收藏",
+                "displayName": "collect",
+                "id": "qywqzmrh7ylsuj66ah9aklbey397zs6v",
+                "name": "collect",
+                "order": 4,
+                "type": "Array"
+            },
+            {
+                "copyable": true,
+                "description": "CMS 系统字段，请勿随意修改",
+                "displayName": "文档 ID",
+                "id": "_id",
+                "isHidden": true,
+                "isSystem": true,
+                "name": "_id",
+                "type": "String"
+            },
+            {
+                "dateFormatType": "timestamp-ms",
+                "description": "CMS 系统字段，请勿随意修改。通过 CMS 系统录入的数据会默认添加该字段",
+                "displayName": "创建时间",
+                "id": "_createTime",
+                "isSystem": true,
+                "name": "_createTime",
+                "type": "DateTime"
+            },
+            {
+                "dateFormatType": "timestamp-ms",
+                "description": "CMS 系统字段，请勿随意修改。通过 CMS 系统录入的数据会默认添加该字段",
+                "displayName": "修改时间",
+                "id": "_updateTime",
+                "isSystem": true,
+                "name": "_updateTime",
+                "type": "DateTime"
+            },
+            {
+                "defaultValue": false,
+                "description": "首页显示",
+                "displayName": "hot",
+                "id": "y85bfpl7ttozj9tcsfuwtb9h932tdrom",
+                "isRequired": true,
+                "name": "hot",
+                "order": 8,
+                "type": "Boolean"
+            }
+        ],
+        "collectionName": "article",
+        "displayName": "文章表",
+        "description": "文章",
+        "_id": "0122a5876421016b063f6b7833b82278"
+    },
+    {
+        "fields": [
+            {
+                "description": "预约id",
+                "displayName": "id",
+                "id": "ncsu2zmvh2m8dtc6jcwr2gqlqmzbmf02",
+                "isRequired": true,
+                "name": "id",
+                "order": 0,
+                "type": "Number"
+            },
+            {
+                "description": "用户id",
+                "displayName": "uid",
+                "id": "1launv2jankadus97loxsn9a2kivjrva",
+                "isRequired": true,
+                "name": "uid",
+                "order": 1,
+                "type": "String"
+            },
+            {
+                "description": "用户姓名",
+                "displayName": "uname",
+                "id": "76s6okgykgqf24cijrxjr2sjg7ziwgev",
+                "isRequired": true,
+                "name": "uname",
+                "order": 2,
+                "type": "String"
+            },
+            {
+                "description": "申请人联系电话",
+                "displayName": "umob",
+                "id": "s3494it9k7a4c3t7nqktc5wmfl2fvzxo",
+                "isRequired": true,
+                "max": 11,
+                "min": 11,
+                "name": "umob",
+                "order": 3,
+                "type": "String"
+            },
+            {
+                "description": "楼栋",
+                "displayName": "building",
+                "id": "5pbu67as7xtohjj0a3j8moxwtx7t840j",
+                "isRequired": true,
+                "name": "building",
+                "order": 4,
+                "type": "String"
+            },
+            {
+                "description": "详细地址",
+                "displayName": "fulladdress",
+                "id": "krru1tac3mq0py193v9wzkpat1wq7zdj",
+                "isRequired": true,
+                "name": "fulladdress",
+                "order": 5,
+                "type": "String"
+            },
+            {
+                "description": "预约用途描述",
+                "displayName": "cause",
+                "id": "rghzpwoq0i5ein5511tmm6vi0qud7dnl",
+                "isRequired": true,
+                "name": "cause",
+                "order": 6,
+                "type": "String"
+            },
+            {
+                "dateFormatType": "date",
+                "description": "开始时间",
+                "displayName": "startdate",
+                "id": "rg0w16xrk4ebhtjr944x4o73qq4ryq7m",
+                "isRequired": true,
+                "name": "startdate",
+                "order": 7,
+                "type": "DateTime"
+            },
+            {
+                "dateFormatType": "date",
+                "description": "结束时间",
+                "displayName": "enddate",
+                "id": "pr01r4d0f9ce4clmd6gq265kkd5wghfk",
+                "isRequired": true,
+                "name": "enddate",
+                "order": 8,
+                "type": "DateTime"
+            },
+            {
+                "description": "预约状态",
+                "displayName": "status",
+                "enumElementType": "number",
+                "enumElements": [
+                    {
+                        "label": "已完成",
+                        "value": 2
+                    },
+                    {
+                        "label": "审核中",
+                        "value": 0
+                    },
+                    {
+                        "label": "已通过",
+                        "value": 1
+                    },
+                    {
+                        "label": "未通过",
+                        "value": -1
+                    }
+                ],
+                "id": "9u4kpktf8o52w39jwrkrbicvy6krcjfi",
+                "isRequired": true,
+                "name": "status",
+                "order": 9,
+                "type": "Enum"
+            },
+            {
+                "copyable": true,
+                "description": "CMS 系统字段，请勿随意修改",
+                "displayName": "文档 ID",
+                "id": "_id",
+                "isHidden": true,
+                "isSystem": true,
+                "name": "_id",
+                "type": "String"
+            },
+            {
+                "dateFormatType": "timestamp-ms",
+                "description": "CMS 系统字段，请勿随意修改。通过 CMS 系统录入的数据会默认添加该字段",
+                "displayName": "创建时间",
+                "id": "_createTime",
+                "isSystem": true,
+                "name": "_createTime",
+                "type": "DateTime"
+            },
+            {
+                "dateFormatType": "timestamp-ms",
+                "description": "CMS 系统字段，请勿随意修改。通过 CMS 系统录入的数据会默认添加该字段",
+                "displayName": "修改时间",
+                "id": "_updateTime",
+                "isSystem": true,
+                "name": "_updateTime",
+                "type": "DateTime"
+            }
+        ],
+        "collectionName": "subscribeorder",
+        "displayName": "场地预约表",
+        "description": "场地预约表",
+        "_id": "93e4b6a064210713064132e74debed76"
+    },
+    {
+        "fields": [
+            {
+                "description": "维修id",
+                "displayName": "id",
+                "id": "n848luy024a7h4cf9tww0j9q0z7lo9u3",
+                "isRequired": true,
+                "name": "id",
+                "order": 0,
+                "type": "String"
+            },
+            {
+                "description": "用户id",
+                "displayName": "uid",
+                "id": "4sqhk87f7gt9vduhfbkie5lbk1jsn823",
+                "isRequired": true,
+                "name": "uid",
+                "order": 1,
+                "type": "String"
+            },
+            {
+                "description": "用户姓名",
+                "displayName": "uname",
+                "id": "djhk1emvd3dqmhe0x0ef588qdniiq15z",
+                "isRequired": true,
+                "name": "uname",
+                "order": 2,
+                "type": "String"
+            },
+            {
+                "description": "用户联系电话",
+                "displayName": "umob",
+                "id": "1l9b8sfv4zkuixxkjia24o6oo67073yf",
+                "isRequired": true,
+                "max": 11,
+                "min": 11,
+                "name": "umob",
+                "order": 3,
+                "type": "String"
+            },
+            {
+                "description": "楼栋",
+                "displayName": "building",
+                "id": "8ffpq58e9fgjdvwuo9f3mkr0q6r34mpz",
+                "isRequired": true,
+                "name": "building",
+                "order": 4,
+                "type": "String"
+            },
+            {
+                "description": "详细地址",
+                "displayName": "fulladdress",
+                "id": "jpw0u02docfvuvlfu62wdr2ku679dubb",
+                "isRequired": true,
+                "name": "fulladdress",
+                "order": 5,
+                "type": "String"
+            },
+            {
+                "description": "报修描述",
+                "displayName": "describe",
+                "id": "lhccjpwb44khxcqdv6qsqj0pszwbctmw",
+                "isRequired": true,
+                "name": "describe",
+                "order": 6,
+                "type": "String"
+            },
+            {
+                "description": "报修图片",
+                "displayName": "image",
+                "id": "k8c69is1w48w0dagmxk4fhrftujswu21",
+                "isMultiple": true,
+                "name": "image",
+                "order": 7,
+                "resourceLinkType": "fileId",
+                "type": "Image"
+            },
+            {
+                "description": "故障视频",
+                "displayName": "video",
+                "id": "go1s9vevb0870fykh6z8pi3reqls9scc",
+                "isMultiple": true,
+                "mediaType": "video",
+                "name": "video",
+                "order": 8,
+                "resourceLinkType": "fileId",
+                "type": "Media"
+            },
+            {
+                "description": "订单状态",
+                "displayName": "status",
+                "enumElementType": "number",
+                "enumElements": [
+                    {
+                        "label": "进行中",
+                        "value": 0
+                    },
+                    {
+                        "label": "已完成",
+                        "value": 1
+                    }
+                ],
+                "id": "f7egl0iewvso2rkawov96ifflm1vo6xj",
+                "isRequired": true,
+                "name": "status",
+                "order": 9,
+                "type": "Enum"
+            },
+            {
+                "copyable": true,
+                "description": "CMS 系统字段，请勿随意修改",
+                "displayName": "文档 ID",
+                "id": "_id",
+                "isHidden": true,
+                "isSystem": true,
+                "name": "_id",
+                "type": "String"
+            },
+            {
+                "dateFormatType": "timestamp-ms",
+                "description": "CMS 系统字段，请勿随意修改。通过 CMS 系统录入的数据会默认添加该字段",
+                "displayName": "创建时间",
+                "id": "_createTime",
+                "isSystem": true,
+                "name": "_createTime",
+                "type": "DateTime"
+            },
+            {
+                "dateFormatType": "timestamp-ms",
+                "description": "CMS 系统字段，请勿随意修改。通过 CMS 系统录入的数据会默认添加该字段",
+                "displayName": "修改时间",
+                "id": "_updateTime",
+                "isSystem": true,
+                "name": "_updateTime",
+                "type": "DateTime"
+            }
+        ],
+        "collectionName": "repairorder",
+        "displayName": "维修订单表",
+        "description": "维修订单表",
+        "_id": "8f4e14e96421074d00056b4e46681463"
+    },
+    {
+        "fields": [
+            {
+                "description": "楼栋",
+                "displayName": "building",
+                "id": "h8iaog9rvbc51wttbwxrya85ookdyyc6",
+                "isRequired": true,
+                "name": "building",
+                "order": 0,
+                "type": "String"
+            },
+            {
+                "copyable": true,
+                "description": "CMS 系统字段，请勿随意修改",
+                "displayName": "文档 ID",
+                "id": "_id",
+                "isHidden": true,
+                "isSystem": true,
+                "name": "_id",
+                "type": "String"
+            },
+            {
+                "dateFormatType": "timestamp-ms",
+                "description": "CMS 系统字段，请勿随意修改。通过 CMS 系统录入的数据会默认添加该字段",
+                "displayName": "创建时间",
+                "id": "_createTime",
+                "isSystem": true,
+                "name": "_createTime",
+                "type": "DateTime"
+            },
+            {
+                "dateFormatType": "timestamp-ms",
+                "description": "CMS 系统字段，请勿随意修改。通过 CMS 系统录入的数据会默认添加该字段",
+                "displayName": "修改时间",
+                "id": "_updateTime",
+                "isSystem": true,
+                "name": "_updateTime",
+                "type": "DateTime"
+            }
+        ],
+        "collectionName": "area",
+        "displayName": "场地表",
+        "description": "场地表",
+        "_id": "3d99d646642107830004054732aefc5c"
+    }
+]

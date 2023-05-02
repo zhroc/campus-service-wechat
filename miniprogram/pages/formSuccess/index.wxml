@@ -1,0 +1,10 @@
+<!--pages/formSuccess/index.wxml-->
+<view style="padding: 10vh 5vw;text-align: center;">
+    <icon type="success" size="100">
+    </icon>
+    <view>
+        <text>提交成功，请等待管理员审核！</text>
+    </view>
+    <button style="margin-top: 10vh;" type="primary" bindtap="subscribeMessage">完成</button>
+
+</view>

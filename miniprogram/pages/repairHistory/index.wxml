@@ -1,0 +1,51 @@
+<!--pages/repairHistory/index.wxml-->
+<view>
+  <!--导航条-->
+  <view class="navbar">
+    <text wx:for="{{navbar}}" data-idx="{{index}}" class="navbar-item {{currentTab == index ? 'active' : 'activex'}}" wx:key="unique" bindtap="navbar">{{item}}</text>
+  </view>
+  
+  <!--进行中-->
+  <view hidden="{{currentTab!==0}}">
+    <scroll-view class="scroll" scroll-y="true" bindscrolltolower="scrolltolower">
+      <view class="no-data" wx:if="{{doOrderList.length == 0}}">未查询到相关的订单</view>
+      <view wx:for="{{doOrderList}}" wx:key="item" data-info="{{item}}" bindtap="goRepairOrderInfoPage" class="order-body">
+        <view class="order-header">订单信息</view>
+        <view class="order-item">
+          <text class="item-name">报修单号</text><text>{{item.id}}</text>
+        </view>
+        <view class="order-item">
+          <text class="item-name">报修时间</text><text>{{item.showdate}}</text>
+        </view>
+        <view class="order-item">
+          <text class="item-name">报修区域</text><text>{{item.building}}</text>
+        </view>
+        <view class="order-item">
+          <text class="item-name">工单状态</text><text style="color: rgb(231, 165, 42);">进行中</text>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <!--已完成-->
+  <view hidden="{{currentTab!==1}}">
+    <scroll-view class="scroll" scroll-y="true" bindscrolltolower="scrolltolower">
+      <view class="no-data" wx:if="{{completedOrderList.length == 0}}">未查询到相关的订单</view>
+      <view wx:for="{{completedOrderList}}" wx:key="item" data-info="{{item}}" bindtap="goRepairOrderInfoPage" class="order-body">
+        <view class="order-header">订单信息</view>
+        <view class="order-item">
+          <text class="item-name">报修单号</text><text>{{item.id}}</text>
+        </view>
+        <view class="order-item">
+          <text class="item-name">报修时间</text><text>{{item.showdate}}</text>
+        </view>
+        <view class="order-item">
+          <text class="item-name">报修区域</text><text>{{item.building}}</text>
+        </view>
+        <view class="order-item">
+          <text class="item-name">工单状态</text><text style="color: rgb(21, 188, 132);">已完成</text>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

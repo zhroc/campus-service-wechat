@@ -1,0 +1,50 @@
+/* pages/subscribeOrderInfo/index.wxss */
+.main {
+  margin: 3vw;
+  /* background-color: rgb(21, 188, 132);
+  border-radius: 20rpx; */
+}
+
+/* .content {
+  background-color: ;
+} */
+
+.head {
+  height: 8vw;
+  background-color: rgb(21, 188, 132);
+  border-top-right-radius: 20rpx;
+  border-top-left-radius: 20rpx;
+}
+
+.update {
+  display:flex;
+}
+
+#btn1 {
+  width: 50%;
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2vw 1vw 3vw 1vw;
+  background-color: rgb(21, 188, 132);
+}
+
+#btn2 {
+  width: 50%;
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2vw 1vw 3vw 1vw;
+  background-color: #ffffff;
+}
+
+.foot {
+  height: 8vw;
+  /* margin-top: 1vh; */
+  margin-bottom: 2vh;
+  background-color: #ffffff;
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+}

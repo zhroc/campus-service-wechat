@@ -1,0 +1,33 @@
+<view>
+  <!-- logo -->
+  <img src="" alt=""/>
+</view>
+
+<view>
+<!-- 登录表单 -->
+  <form bindsubmit="doLogin">
+  <view class="logintitle">欢迎</view>
+    <!-- 身份选择 -->
+    <view>
+      <picker name="identity" bindchange="bindPickerChange" mode="selector" value="{{index}}" range="{{array}}">
+        <input class="formInput" type="text" placeholder="选择身份" disabled="disabled" value="{{array[index]}}" />
+      </picker>
+    </view>
+    <!-- 姓名 -->
+    <view class="formView">
+      <input class="formInput" type="text" name="username" placeholder="请输入姓名" />
+    </view>
+    <!-- id -->
+    <view class="formView">
+      <input wx:if="{{index == 0}}" class="formInput" type="number" name="usernumber" placeholder="请输入学号" />
+      <input wx:if="{{index == 1}}" class="formInput" type="number" name="usernumber" placeholder="请输工号" />
+    </view>
+    <!-- 密码 -->
+    <!-- <view class="formView">
+      <input class="formInput" type="password" name="password" placeholder="请设置密码" />
+    </view> -->
+    <view>
+      <button class="loginbtn" form-type="submit" type="primary">绑定微信并登录</button>
+    </view>
+  </form>
+</view>

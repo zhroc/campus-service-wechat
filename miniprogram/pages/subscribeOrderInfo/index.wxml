@@ -1,0 +1,25 @@
+<!--pages/subscribeOrderInfo/index.wxml-->
+<!-- <text>pages/subscribeOrderInfo/index.wxml</text> -->
+<view class="main">
+  <view class="head">
+  </view>
+  <view class="content">
+    <mp-cells >
+      <mp-cell wx:for="{{dataInfo.subscribeTitle}}" wx:key="item" title="{{item}}" footer="{{subscribeData[index]}}">
+      </mp-cell>
+    </mp-cells>
+    <mp-cells >
+      <mp-cell wx:for="{{dataInfo.orderTitle}}" wx:key="item" title="{{item}}" footer="{{orderData[index]}}">
+      </mp-cell>
+    </mp-cells>
+    <mp-cells >
+      <mp-cell wx:for="{{dataInfo.userTitle}}" wx:key="item" title="{{item}}" footer="{{userData[index]}}">
+      </mp-cell>
+    </mp-cells>
+  </view>
+  <view class="foot"></view>
+  <view wx:if="{{userRole === 1}}" class="update">
+    <button id="btn1" class="" type="primary" data-status="1" bindtap="updateStatus">通过</button>
+    <button id="btn2" class="" type="warn" data-status="-1" bindtap="updateStatus">驳回</button>
+  </view>
+</view>

@@ -1,0 +1,55 @@
+<!--pages/subscribeForm/index.wxml-->
+<view>
+  <mp-toptips msg="{{error}}" type="error" show="{{error}}"></mp-toptips>
+  <mp-form-page title="场地申请" subtitle="">
+    <mp-form id="form" rules="{{rules}}" models="{{formData}}">
+      <mp-cells> 
+        <picker 
+          bindchange="buildingChange"
+          value="{{buildingIndex}}" 
+          range="{{buildingArray}}">
+          <mp-cell title="预约区域" link="true" hover="true" value="">
+            <text class="mptext">{{buildingArray[buildingIndex]}}</text>
+          </mp-cell>
+        </picker>
+        <mp-cell title="详细地址" prop="address">
+          <input type="text" data-field="address" bindinput="formInputChange" placeholder="请填写地址精确到室" value=""/>
+        </mp-cell>
+        <mp-cell title="场地用途" prop="siteusage">
+          <textarea rows="1" cols="1" maxlength="100" style="width: 50vw; height: 20vw;" bindinput="formInputChange" data-field="siteusage"></textarea>
+        </mp-cell>
+        <mp-cell title="联系电话" prop="mobile">
+          <input type="number" data-field="mobile" bindinput="formInputChange" placeholder="请填写手机号" value="{{}}"/>
+        </mp-cell>
+        <picker 
+          mode="date"
+          start="{{startDate}}"
+          end="{{endDate}}"
+          bindchange="dateChange">
+          <mp-cell title="使用日期" link="true" hover="true" value="{{useDate}}">
+            <text class="mptext">{{useDate}}</text>
+          </mp-cell>
+        </picker>
+        <picker 
+          value="{{startTimeIndex}}" 
+          range="{{TimeArray}}"
+          bindchange="startTimeChange">
+          <mp-cell title="开始时间" link="true" hover="true" value="{{TimeArray[startTimeIndex]}}:00">
+            <text class="mptext">{{TimeArray[startTimeIndex]}}:00</text>
+          </mp-cell>
+        </picker>
+        <picker 
+          value="{{endTimeIndex}}" 
+          range="{{TimeArray}}"
+          bindchange="endTimeChange">
+          <mp-cell title="结束时间" link="true" hover="true" value="{{TimeArray[endTimeIndex]}}:00">
+            <text class="mptext">{{TimeArray[endTimeIndex]}}:00</text>
+          </mp-cell>
+        </picker>
+      </mp-cells>
+    </mp-form>
+    <view slot="button">
+        <button class="weui-btn" type="primary" bindtap="submitForm">提交</button>
+    </view>
+  </mp-form-page>
+</view>

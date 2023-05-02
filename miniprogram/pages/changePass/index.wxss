@@ -1,0 +1,19 @@
+/* pages/changePass/index.wxss */
+.title {
+  font-size:6vw;
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+  padding-left: 10vw;
+}
+.formInput {
+  margin: auto;
+  background-color:rgb(255, 255, 255);
+  width: 70vw;
+  height: 10vw;
+  margin-bottom: 10vw;
+  padding: 1vw;
+  padding-left: 2vw;
+}
+.btn {
+  margin-top: 16vw;
+}

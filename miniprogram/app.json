@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/tools/index",
+    "pages/login/index",
+    "pages/article/index",
+    "pages/subscribeForm/index",
+    "pages/repairForm/index",
+    "pages/formSuccess/index",
+    "pages/subscribeHistory/index",
+    "pages/repairHistory/index",
+    "pages/subscribeOrderInfo/index",
+    "pages/repairOrderInfo/index",
+    "pages/manageApply/index",
+    "pages/newsList/index",
+    "pages/me/index",
+    "pages/myFavorites/index",
+    "pages/changePass/index"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "掌上校秘书",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "useExtendedLib": {
+    "weui": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/tools/index",
+        "text": "首页",
+        "iconPath": "images/icon/home.png",
+        "selectedIconPath": "images/icon/shome.png"
+      },
+      {
+        "pagePath": "pages/me/index",
+        "text": "我的",
+        "iconPath": "images/icon/me.png",
+        "selectedIconPath": "images/icon/sme.png"
+      }
+    ]
+  }
+}

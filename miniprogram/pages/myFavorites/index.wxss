@@ -1,0 +1,71 @@
+/* pages/myFavorites/index.wxss */
+
+.box {
+  padding-bottom: 6vw;
+}
+
+/* 文章 */
+.items {
+  /* margin-top: 3vh; */
+  height: 200rpx;
+  width: 90vw;
+  margin: auto;
+  border-bottom: 15rpx solid #efefef;
+  border-right: 15rpx solid #efefef;
+  /* border-radius: 8rpx; */
+  line-height: 50rpx;
+  /* margin: 10rpx; */
+  position: relative;
+  margin-top: 4vw;
+  padding: 3vw 0vw 3vw 0vw;
+  background-color: rgb(255, 255, 255);  /*设置每张小卡片的颜色*/
+}
+
+.father{
+  display: flex;
+}
+.son1{
+  width: 60%;
+  display: flex;
+  flex-direction: column;  /*使元素纵向布局（默认为横向）*/
+}
+.son2{
+  width: 40%;
+  display: flex;
+}
+.box image{
+  height: 180rpx;
+  width: 100%;
+  margin-right: 20rpx;
+  margin-left: 10rpx;
+}
+
+.title{
+  font-size:32rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  display: -webkit-box;  /*设置为弹性盒子*/
+  overflow:hidden; /*超出隐藏*/
+  text-overflow: ellipsis; /*显示省略号*/
+  -webkit-line-clamp: 3; /*多少行后显示省略号，这里设置为第一行超出后显示省略号*/
+  word-break:break-all; /*强制英文单词自动换行,可要可不要*/
+  -webkit-box-orient: vertical; /* 从上到下垂直排列子元素*/
+}
+
+.digest {
+  font-size: 27rpx;
+  color: gray;
+  margin-top: 30rpx;
+  margin-left: 20rpx;
+  display: -webkit-box;  /*设置为弹性盒子*/
+  overflow:hidden; /*超出隐藏*/
+  text-overflow: ellipsis; /*显示省略号*/
+  -webkit-line-clamp: 1; /*多少行后显示省略号，这里设置为第一行超出后显示省略号*/
+  word-break:break-all; /*强制英文单词自动换行,可要可不要*/
+  -webkit-box-orient: vertical; /* 从上到下垂直排列子元素*/
+}
+
+.foot {
+  padding-top: 30vh;
+  text-align: center;
+}

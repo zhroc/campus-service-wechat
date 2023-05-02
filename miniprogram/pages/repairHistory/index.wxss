@@ -1,0 +1,78 @@
+/* pages/repairHistory/index.wxss */
+
+.navbar{
+  flex: none;
+  display: flex;
+  background: #fff;
+  border-bottom: 1rpx #07C160;
+}
+
+.navbar .navbar-item{
+  position: relative;
+  flex: auto;
+  text-align: center;
+  line-height: 10vw;
+}
+
+/*选中后字体颜色*/
+.navbar .navbar-item.active{
+  color: #07C160;
+}
+
+/*选中后下划线颜色*/
+.navbar .navbar-item.active:after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.2rem;
+  background: #07C160;
+}
+
+/* 上拉刷新盒子 */
+.scroll {
+  text-align: center;
+}
+
+/* 订单body */
+.order-body {
+  width: 88vw;
+  height: 46vw;
+  display: inline-block;
+  border-radius: 6px;
+  margin-top: 3vw;
+  padding: 3vw;
+  margin-bottom: 2vw;
+  background-color: #fff;
+  box-shadow: 0 1px 4px 0 rgba(54, 54, 54, 0.2);
+}
+
+/* 订单item的标题 */
+.order-header {
+  font-size:larger;
+  /* font-weight: bold; */
+  padding-top: 2vw;
+  padding-bottom: 3vw;
+  margin-right: 67vw;
+  
+}
+
+/* 项目名称 */
+.item-name {
+  color: grey;
+}
+
+/* 订单的每一项 */
+.order-item {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  padding-top: 1.5vw;
+}
+
+/* 无数据时显示的view */
+.no-data {
+  padding-top: 50vw;
+}

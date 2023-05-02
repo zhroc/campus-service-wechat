@@ -1,0 +1,19 @@
+/* pages/login/index.wxss */
+.logintitle {
+  font-size:9vw;
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+  padding-left: 10vw;
+}
+.formInput {
+  margin: auto;
+  background-color:rgb(255, 255, 255);
+  width: 70vw;
+  height: 10vw;
+  margin-bottom: 10vw;
+  padding: 1vw;
+  padding-left: 2vw;
+}
+.loginbtn {
+  margin-top: 16vw;
+}

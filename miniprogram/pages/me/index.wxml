@@ -1,0 +1,54 @@
+<!--pages/me/index.wxml-->
+<view class="header">
+  <view>
+    <button id="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+      <image class="useravatar" src="{{userInfo.avatarUrl ? userInfo.avatarUrl : avatarUrl}}"></image>
+    </button> 
+  </view>
+  <view class="userinfo">
+    <view>
+      <text class="username">{{userInfo.userName}}</text>
+      <text wx:if="{{userInfo.userIdentity == 0}}" class="flag" style="background-color: #FFCC99;">学生</text>
+      <text wx:if="{{userInfo.userIdentity == 1}}" class="flag" style="background-color: #99CC66">管理员</text>
+    </view>
+    <view>
+      <text class="classname">{{userInfo.userNumber}}</text>
+    </view>
+  </view>
+  <view class="updateinfo">
+    <!-- <text>更新信息</text> -->
+  </view>
+</view>
+
+<view>
+  <mp-cells wx:if="{{userInfo.userIdentity === 1}}">
+    <mp-cell hover link bindtap="gotoPage" data-path="/pages/manageApply/index">
+      <text>审核管理</text>
+    </mp-cell>
+  </mp-cells>
+  <mp-cells>
+    <mp-cell hover link wx:for="{{pagelist}}" wx:key="key" bindtap="gotoPage" data-path="{{item.path}}">
+      <text>{{item.name}}</text>
+    </mp-cell>
+    <mp-cell hover link bindtap="goPushSettingPage">
+      <text>推送设置</text>
+    </mp-cell>
+  </mp-cells>
+  <mp-cells>
+    <mp-cell hover link bindtap="gotoPage" data-path="/pages/changePass/index">
+      <text>修改信息</text>
+    </mp-cell>
+    <mp-cell hover link bindtap="unBind">
+      <text>解绑微信</text>
+    </mp-cell>
+  </mp-cells>
+  <mp-cells class="logoutcell">
+    <mp-cell hover bindtap="logOut">
+      <text>退出登录</text>
+    </mp-cell>
+  </mp-cells>
+
+</view>
+<view>
+  
+</view>

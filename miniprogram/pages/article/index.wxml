@@ -1,0 +1,16 @@
+<!--pages/article/index.wxml-->
+<view class="box">
+  <view class="title">
+    <text class="title">{{detail.title}}</text>
+  </view>
+  <view class="imgdiv">
+    <image class="img" src="{{detail.newsheader}}" mode="widthFix"></image>
+  </view>
+  <rich-text nodes="{{detail.content}}" class="nodesbox"></rich-text>
+  <view class="footer">
+    <view wx:for="{{footdata}}" wx:key="footdata">
+        <image class = "footimage" src = "{{item.url}}" bindtap="clickfoot" data-index="{{index}}"></image>
+        <view>{{item.title}}</view>
+    </view>
+  </view>
+</view>

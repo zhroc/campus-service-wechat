@@ -1,0 +1,43 @@
+/* pages/article/index.wxss */
+.box {
+  align-content: center;
+  /* text-align: center; */
+  padding: 0vw 5vw 4vw 5vw;
+  /* margin-bottom: 10vw; */
+  background-color: #ffffff;
+}
+
+.title {
+  margin-top: 5vw;
+  font-size: 40rpx;
+}
+
+.imgdiv {
+  /* margin: auto 0; */
+  padding-top: 3vh;
+  text-align: center;
+  
+}
+
+.image-wrap .img_class {
+  text-align: center;
+  width: 90vw;
+  padding-top: 3vw;
+  padding-bottom: 2vw;
+}
+
+.footer {
+  display: flex;
+  text-align: center;
+  font-size: 26rpx;
+  padding: 6vw 10vw 4vw 10vw;
+}
+.footer view {
+  align-items: center;
+  margin: auto;
+}
+
+.footimage {
+  width: 10vw;
+  height: 10vw;
+}

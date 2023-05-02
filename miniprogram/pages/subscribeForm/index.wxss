@@ -1,0 +1,22 @@
+/* pages/subscribeForm/index.wxss */
+
+
+.mptext {
+  width: 42vw;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.faultmedia {
+  margin: 0.1rem;
+  float: left;
+  width: 23vw;
+  height: 23vw;
+}
+
+.tips {
+  font-size: 0.8rem;
+  color: rgb(160, 160, 160);
+}

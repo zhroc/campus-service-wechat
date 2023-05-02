@@ -1,0 +1,27 @@
+<!--pages/changePass/index.wxml-->
+<!-- <text>pages/changePass/index.wxml</text> -->
+<view>
+  <!-- logo -->
+  <img src="" alt=""/>
+</view>
+
+<view>
+<!-- 登录表单 -->
+  <form bindsubmit="changePass">
+  <view class="title">修改绑定手机号</view>
+
+    <!-- 姓名 -->
+    <view class="formView">
+      <input class="formInput" type="text" name="userid" placeholder="请输入学号" />
+    </view>
+    <!-- id -->
+    <view class="formView">
+      <input class="formInput" type="number" name="oldnumber" placeholder="请输入原手机号" />
+      <input class="formInput" type="number" name="newnumber" placeholder="请输入新手机号" />
+    </view>
+
+    <view>
+      <button class="btn" form-type="submit" type="primary">确认修改</button>
+    </view>
+  </form>
+</view>
