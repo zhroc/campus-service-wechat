@@ -3,7 +3,7 @@
 **本项目不可用于任何商业活动，仅可用于学习用途**
 
 **UI来源** 
-- https://github.com/Tencent/weui-wxss/
+- https://github.com/wechat-miniprogram/weui-miniprogram
 
 **项目截图**
 
