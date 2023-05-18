@@ -1,7 +1,7 @@
 ## 基于云开发的智慧校园综合服务微信小程序
 
 ### 完整源码
-- https://github.com/zhroc/campus-service-wechat
+- https://github.com/zhroc/campus-service-wechat/releases
 
 ### UI来源
 - https://github.com/wechat-miniprogram/weui-miniprogram
