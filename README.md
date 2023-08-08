@@ -8,14 +8,14 @@
 
 ### 项目截图
 
-![image](https://raw.githubusercontent.com/zhroc/campus-service-wechat/main/docs/home.png)
-![image](https://raw.githubusercontent.com/zhroc/campus-service-wechat/main/docs/article.png)
-![image](https://raw.githubusercontent.com/zhroc/campus-service-wechat/main/docs/repair.png)
-![image](https://raw.githubusercontent.com/zhroc/campus-service-wechat/main/docs/repairinfo.png)
-![image](https://raw.githubusercontent.com/zhroc/campus-service-wechat/main/docs/subscribe.png)
-![image](https://raw.githubusercontent.com/zhroc/campus-service-wechat/main/docs/subscribeinfo.png)
-![image](https://raw.githubusercontent.com/zhroc/campus-service-wechat/main/docs/userinfo.png)
-![image](https://raw.githubusercontent.com/zhroc/campus-service-wechat/main/docs/other.png)
+<img src="https://raw.githubusercontent.com/zhroc/campus-service-wechat/main/docs/home.png" width="350">
+<img src="https://raw.githubusercontent.com/zhroc/campus-service-wechat/main/docs/article.png" width="700">
+<img src="https://raw.githubusercontent.com/zhroc/campus-service-wechat/main/docs/repair.png" width="700">
+<img src="https://raw.githubusercontent.com/zhroc/campus-service-wechat/main/docs/repairinfo.png" width="700">
+<img src="https://raw.githubusercontent.com/zhroc/campus-service-wechat/main/docs/subscribe.png" width="700">
+<img src="https://raw.githubusercontent.com/zhroc/campus-service-wechat/main/docs/subscribeinfo.png" width="700">
+<img src="https://raw.githubusercontent.com/zhroc/campus-service-wechat/main/docs/userinfo.png" width="700">
+<img src="https://raw.githubusercontent.com/zhroc/campus-service-wechat/main/docs/other.png" width="700">
 
 ### 部署步骤
 1. 下载本仓库代码到本地。
