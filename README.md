@@ -27,3 +27,22 @@
 
 > 注意：本项目代码结构混乱、不规范，且需求实现方式并不优雅，存在更好的解决方案，大家可自行修改。
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=zhroc/campus-service-wecha&type=Date)](https://star-history.com/#zhroc/campus-service-wecha&Date)
+
+## 贡献者
+
+<!-- readme: collaborators,contributors -start -->
+<table>
+  <tr>
+      <td align="center">
+          <a href="https://github.com/zhroc">
+              <img src="https://avatars.githubusercontent.com/u/46491966?v=4" width="100;" alt="zhroc"/>
+              <br />
+              <sub><b>zhroc</b></sub>
+          </a>
+      </td>
+  </tr>
+</table>
+<!-- readme: collaborators,contributors -end -->
